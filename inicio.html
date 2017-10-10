@@ -1,0 +1,80 @@
+<?php
+required_once("./php/myDBC.php");
+if(isset($_SESSION['session']))
+{
+    header("location:principal.php");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Dragon Ball z</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="estilos/styleinicio.css" rel="stylesheet" />
+</head>
+ 
+<body background= "img/ball.jpg">
+
+
+ 
+   
+
+<header>
+    <img src="img/s.jpg">
+        <img src="img/logo.jpg">
+        <nav>
+            <ul>
+                <li>
+                        <center>
+                            
+                        </center> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+ <div id="registrar">
+
+
+</div> <!-- fin opcion-->
+ 
+    <div id="envoltura">
+        <div id="contenedor">
+ 
+            <div id="cabecera" >
+                <h1>Bienbenidos</h1>
+            </div>
+ 
+            <div id="cuerpo">
+                <form id="form-login" action="" method="post" autocomplete="off">
+                    <!--A saber, el atributo for funciona como el id.-->
+                    <!--ejemplo <label for="usuario">Usuario:</label>-->
+                    <!--required es nuevo en html5, si el campo está vacío te avisa, pero cuidado, no valida la información-->
+                    <p><label >Usuario:</label></p>
+                        <input name="usuario" type="text" id="usuario" placeholder="Ingresa Usuario" autofocus="" required=""></p>
+ 
+                    <p><label>Contraseña:</label></p>
+                        <input name="contrasenia" type="password" id="contrasenia" placeholder="Ingresa Password" required=""></p>
+ 
+                  <a href="DragonBallZ.html"><input type="button" value="Ingresar"></a>
+                <a href="registro.html"><input type="button" value="Registrate"></a>
+</form>
+               
+
+
+            </div><!--fin cuerpo-->
+           
+ 
+            <div id="pie" >Dale clic a  
+
+                    <a href="registro.html">Registrate</a>
+
+            </div>
+        </div><!-- fin contenedor -->
+    </div><!--fin envoltura-->
+
+
+
+</body>
+ 
+</html>

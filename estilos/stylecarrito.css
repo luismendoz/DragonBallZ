@@ -1,0 +1,124 @@
+	* {
+				margin:0px;
+				padding:0px;
+			}
+			
+img {
+	width: 90px;
+}
+header{
+	background:#FF8000;
+	padding: 5px 15px;
+}
+
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:500px; /*Le establecemos un ancho*/
+				margin:0 auto; /*Centramos automaticamente*/
+			}
+ 
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+section .imagentitulo {
+	height: 250px;
+	background: url('../img/tienda.jpg') no-repeat center;
+	background-size: cover;
+	padding-top: 20px;
+}
+
+section .imagentitulo h3{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+
+section .imagentitulo ul {
+	list-style: none;
+	text-align: center;
+    margin-top: 150px;
+}
+
+section .imagentitulo ul li {
+	display: inline-block;
+}
+section .imagentitulo ul li a {
+	text-decoration: none;
+	border: solid 2px white;
+	color: white;
+	padding: 15px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-weight: normal;
+}
+section .imagentitulo ul li a:hover{
+	color: #FF8000;
+	border-color: #FF8000;
+}
+section article p {
+	max-width: 400px;
+	margin: 30px auto;
+	text-align: center;
+}
+section nav {
+	background-color: white;
+}
+section nav ul li {
+	text-align: center;
+    padding: 40px 80px;
+    overflow: auto;
+    display: inline-block;
+}

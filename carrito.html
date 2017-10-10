@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<title>Menu Desplegable</title>
+		<style type="text/css">
+			
+			*{
+	font-family: 'Encode Sans Expanded', sans-serif;
+	padding: 0; 
+	margin: 0;
+}
+			
+			a{
+	color: black;
+	font-weight: bold;
+}
+
+header{
+	background:#FF8000;
+	padding: 10px 15px;
+}
+
+header img {
+	width: 90px;
+}
+			
+		header nav {
+	float: right;
+	margin-top: 37px;
+}
+			
+		header nav ul {
+	list-style: none;
+}
+
+header nav  li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+			header nav > li {
+				float:left;
+			}
+			
+			header nav li a {
+				background-color:#FF8000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			header nav li a:hover {
+				background-color:#434343;
+			}
+			
+			header nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			header nav li:hover > ul {
+				display:block;
+			}
+			
+			header nav li ul li {
+				position:relative;
+			}
+			
+			header nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+
+
+	</head>
+	<body>
+				<header>
+				<img src="img/logo.jpg">
+			<nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+				<ul>
+					<li><a href="">Inicio</a></li>
+					<li><a href="">Tienda</a>
+						<ul>
+							<li><a href="">Ropa</a></li>
+							<li><a href="">Juguetes</a></li>
+							<li><a href="">Accesorios</a></li>
+							<li><a href="">poster</a></li>
+							<li><a href="">Espisodios</a></li>
+
+								<ul>
+									<li><a href="">Fase 1</a></li>
+									<li><a href="">Fase 2</a></li>
+									<li><a href="">Fase 3</a></li>
+									<li><a href="">Fase 4</a></li>
+									<li><a href="">Fase dios</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="">Faces</a>
+						<ul>
+							<li><a href="">Fase 1</a></li>
+									<li><a href="">Fase 2</a></li>
+									<li><a href="">Fase 3</a></li>
+									<li><a href="">Fase 4</a></li>
+									<li><a href="">Fase dios</a></li>
+						</ul>
+					</li>
+					<li><a href="">Imagenes</a></li>
+				</ul>
+			</nav>
+		</header><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+		<section>
+			<div class="imagentitulo">
+
+			</div>
+		</section>
+		
+	</body>
+</html>
